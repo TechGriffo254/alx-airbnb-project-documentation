@@ -35,7 +35,7 @@ alx-airbnb-project-documentation/
 
 ## Tasks Completed
 
-### ✅ Task 0: Document Project Features and Functionalities
+###  Task 0: Document Project Features and Functionalities
 - **Directory:** `features-and-functionalities/`
 - **File:** `README.md`
 - **Description:** Comprehensive documentation of all backend features including:
@@ -48,7 +48,7 @@ alx-airbnb-project-documentation/
   - Admin Panel
   - Security & Performance requirements
 
-### ✅ Task 1: Design Use Case Diagram
+###  Task 1: Design Use Case Diagram
 - **Directory:** `use-case-diagram/`
 - **File:** `README.md`
 - **Description:** Detailed use case specifications covering:
@@ -58,7 +58,7 @@ alx-airbnb-project-documentation/
   - **Draw.io Instructions:** Step-by-step guide to create the visual diagram
 - **Expected Deliverable:** `use-case-diagram.png` and `use-case-diagram.drawio` (create using Draw.io)
 
-### ✅ Task 2: Convert Use Cases to User Stories
+###  Task 2: Convert Use Cases to User Stories
 - **Directory:** `user-stories/`
 - **Files:** `user-stories.md`, `README.md`
 - **Description:** 18 user stories converted from use cases, including:
@@ -67,7 +67,7 @@ alx-airbnb-project-documentation/
   - 2 Admin user stories (user management, analytics)
   - Each story includes detailed acceptance criteria for development and QA
 
-### ✅ Task 3: Design Data Flow Diagram
+###  Task 3: Design Data Flow Diagram
 - **Directory:** `data-flow-diagram/`
 - **File:** `README.md`
 - **Description:** Complete DFD specifications including:
@@ -78,7 +78,7 @@ alx-airbnb-project-documentation/
   - **Draw.io Instructions:** How to create DFD using proper notation
 - **Expected Deliverable:** `data-flow.png` and `data-flow.drawio` (create using Draw.io)
 
-### ✅ Task 4: Design Flowcharts
+###  Task 4: Design Flowcharts
 - **Directory:** `flowcharts/`
 - **File:** `README.md`
 - **Description:** Three detailed process flowcharts:
@@ -89,7 +89,7 @@ alx-airbnb-project-documentation/
   - Draw.io instructions for creating flowcharts
 - **Expected Deliverable:** Create at least one flowchart and export as `data-flow-diagram.png` (per project requirements)
 
-### ✅ Task 5: Write Requirement Specifications
+###  Task 5: Write Requirement Specifications
 - **File:** `requirements.md`
 - **Description:** Detailed technical and functional requirements for 4 key backend features:
   
@@ -269,14 +269,14 @@ Before requesting manual review, ensure:
 
 By completing this documentation project, you have learned to:
 
-✅ Translate project requirements into structured feature lists  
-✅ Model system interactions using Use Case Diagrams  
-✅ Write clear, actionable User Stories from a user-centric perspective  
-✅ Map data movement through systems using Data Flow Diagrams  
-✅ Detail processes with Flowcharts showing logic and decision points  
-✅ Write precise technical specifications for API endpoints  
-✅ Use professional diagramming tools for technical documentation  
-✅ Follow industry-standard SDLC documentation practices
+ Translate project requirements into structured feature lists  
+ Model system interactions using Use Case Diagrams  
+ Write clear, actionable User Stories from a user-centric perspective  
+ Map data movement through systems using Data Flow Diagrams  
+ Detail processes with Flowcharts showing logic and decision points  
+ Write precise technical specifications for API endpoints  
+ Use professional diagramming tools for technical documentation  
+ Follow industry-standard SDLC documentation practices
 
 ---
 
