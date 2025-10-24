@@ -1,0 +1,375 @@
+<mxfile host="app.diagrams.net" modified="2025-10-24T00:00:00.000Z" agent="5.0" version="21.0.0" etag="data-flow-diagram" type="device">
+  <diagram name="Data Flow Diagram" id="dfd">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Airbnb Clone - Data Flow Diagram (Level 0 &amp; Level 1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ========== LEVEL 0 CONTEXT DIAGRAM ========== -->
+        <mxCell id="level0-title" value="Level 0: Context Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- External Entities Level 0 -->
+        <mxCell id="ext-guest-0" value="Guest" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ext-host-0" value="Host" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ext-payment-0" value="Payment&#xa;Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="880" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ext-email-0" value="Email&#xa;Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="880" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Central System Level 0 -->
+        <mxCell id="system-0" value="Airbnb Clone&#xa;Backend System" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="300" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Data Flows Level 0 -->
+        <mxCell id="flow-guest-search" value="Search requests" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-guest-0" target="system-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="180" as="sourcePoint" />
+            <mxPoint x="260" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-guest-booking" value="Booking requests" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-guest-0" target="system-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="200" as="sourcePoint" />
+            <mxPoint x="260" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-system-confirmation" value="Booking confirmations" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="system-0" target="ext-guest-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="220" as="sourcePoint" />
+            <mxPoint x="340" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-host-listings" value="Property listings" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-host-0" target="system-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="310" as="sourcePoint" />
+            <mxPoint x="260" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-system-notifications" value="Booking notifications" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="system-0" target="ext-host-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="280" as="sourcePoint" />
+            <mxPoint x="340" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-system-payment" value="Payment requests" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="system-0" target="ext-payment-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="220" as="sourcePoint" />
+            <mxPoint x="760" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-payment-status" value="Payment status" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-payment-0" target="system-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="240" as="sourcePoint" />
+            <mxPoint x="820" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-system-email" value="Email notifications" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="system-0" target="ext-email-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="280" as="sourcePoint" />
+            <mxPoint x="760" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow-email-delivery" value="Delivery status" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-email-0" target="system-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="320" as="sourcePoint" />
+            <mxPoint x="820" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ========== LEVEL 1 DETAILED DFD ========== -->
+        <mxCell id="level1-title" value="Level 1: Detailed Processes" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="420" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- External Entities Level 1 -->
+        <mxCell id="ext-guest-1" value="Guest" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="520" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ext-host-1" value="Host" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="880" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ext-payment-1" value="Payment&#xa;Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1280" y="710" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ext-email-1" value="Email&#xa;Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1280" y="950" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Processes (Circles) -->
+        <mxCell id="process-1" value="1.0&#xa;User&#xa;Management" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="220" y="500" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process-2" value="2.0&#xa;Property&#xa;Management" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="220" y="860" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process-3" value="3.0&#xa;Search &amp;&#xa;Filter" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="490" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process-4" value="4.0&#xa;Booking&#xa;Management" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="620" y="640" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process-5" value="5.0&#xa;Payment&#xa;Processing" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="690" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process-6" value="6.0&#xa;Review&#xa;Management" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="820" y="820" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process-7" value="7.0&#xa;Messaging&#xa;System" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="620" y="490" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="process-8" value="8.0&#xa;Notification&#xa;System" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="930" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Data Stores (Open Rectangles) -->
+        <mxCell id="datastore-users" value="D1: Users" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="220" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="datastore-properties" value="D2: Properties" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="datastore-bookings" value="D3: Bookings" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="820" y="650" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="datastore-payments" value="D4: Payments" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="830" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="datastore-reviews" value="D5: Reviews" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="820" y="960" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="datastore-messages" value="D6: Messages" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="620" y="630" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="datastore-notifications" value="D7: Notifications" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1020" y="1060" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Data Flows Level 1 - Guest to User Management -->
+        <mxCell id="flow1-guest-register" value="Registration data" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-guest-1" target="process-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="540" as="sourcePoint" />
+            <mxPoint x="210" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-user-store" value="User data" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-1" target="datastore-users">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="600" as="sourcePoint" />
+            <mxPoint x="280" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Guest to Search -->
+        <mxCell id="flow1-guest-search" value="Search query" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-guest-1" target="process-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="535" as="sourcePoint" />
+            <mxPoint x="410" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-search-properties" value="Property query" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-3" target="datastore-properties">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="590" as="sourcePoint" />
+            <mxPoint x="480" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-properties-search" value="Search results" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="datastore-properties" target="process-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="640" as="sourcePoint" />
+            <mxPoint x="500" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Host to Property Management -->
+        <mxCell id="flow1-host-property" value="Property details" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-host-1" target="process-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="905" as="sourcePoint" />
+            <mxPoint x="210" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-property-store" value="Store listing" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-2" target="datastore-properties">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="870" as="sourcePoint" />
+            <mxPoint x="410" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Booking Process -->
+        <mxCell id="flow1-guest-booking" value="Booking request" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-guest-1" target="process-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="560" as="sourcePoint" />
+            <mxPoint x="600" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-booking-check" value="Check availability" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="process-4" target="datastore-properties">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="670" as="sourcePoint" />
+            <mxPoint x="550" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-booking-store" value="Store booking" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-4" target="datastore-bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="680" as="sourcePoint" />
+            <mxPoint x="810" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-booking-payment" value="Payment request" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-4" target="process-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="700" as="sourcePoint" />
+            <mxPoint x="1010" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Payment Processing -->
+        <mxCell id="flow1-payment-gateway" value="Process payment" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-5" target="ext-payment-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1150" y="730" as="sourcePoint" />
+            <mxPoint x="1270" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-gateway-status" value="Payment status" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-payment-1" target="process-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1270" y="745" as="sourcePoint" />
+            <mxPoint x="1150" y="745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-payment-store" value="Payment record" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-5" target="datastore-payments">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="790" as="sourcePoint" />
+            <mxPoint x="1080" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-payment-notify" value="Payment confirmation" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-5" target="process-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="790" as="sourcePoint" />
+            <mxPoint x="1080" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Review Management -->
+        <mxCell id="flow1-guest-review" value="Review submission" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-guest-1" target="process-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="570" as="sourcePoint" />
+            <mxPoint x="800" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-review-store" value="Store review" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-6" target="datastore-reviews">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="920" as="sourcePoint" />
+            <mxPoint x="880" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Messaging System -->
+        <mxCell id="flow1-guest-message" value="Send message" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-guest-1" target="process-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="530" as="sourcePoint" />
+            <mxPoint x="610" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-message-store" value="Store message" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-7" target="datastore-messages">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="590" as="sourcePoint" />
+            <mxPoint x="680" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-message-notify" value="Notification trigger" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1" source="process-7" target="process-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="560" as="sourcePoint" />
+            <mxPoint x="1000" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Notification System -->
+        <mxCell id="flow1-notify-store" value="Store notification" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-8" target="datastore-notifications">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="1030" as="sourcePoint" />
+            <mxPoint x="1080" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-notify-email" value="Send email" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-8" target="ext-email-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1150" y="970" as="sourcePoint" />
+            <mxPoint x="1270" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-email-confirm" value="Delivery status" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ext-email-1" target="process-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1270" y="985" as="sourcePoint" />
+            <mxPoint x="1150" y="985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="flow1-notify-host" value="Notifications" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="process-8" target="ext-host-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="980" as="sourcePoint" />
+            <mxPoint x="160" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1130" width="600" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-text" value="Legend: External Entities (Rectangle) | Processes (Circle) | Data Stores (Open Rectangle) | Solid Arrow (Data Flow) | Dashed Arrow (Control/Read-Only)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1140" width="580" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
