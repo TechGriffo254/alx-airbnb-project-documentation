@@ -1,0 +1,314 @@
+<mxfile host="app.diagrams.net" modified="2025-10-24T00:00:00.000Z" agent="5.0" version="21.0.0" etag="use-case-diagram" type="device">
+  <diagram name="Use Case Diagram" id="use-case">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- System Boundary -->
+        <mxCell id="system-boundary" value="Airbnb Clone Backend System" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=left;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="800" height="740" as="geometry" />
+        </mxCell>
+
+        <!-- Guest Actor -->
+        <mxCell id="actor-guest" value="Guest" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="60" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Host Actor -->
+        <mxCell id="actor-host" value="Host" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="150" y="500" width="60" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Gateway Actor -->
+        <mxCell id="actor-payment" value="Payment&#xa;Gateway" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="350" width="60" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Guest Use Cases -->
+        <mxCell id="uc-register" value="Register Account" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="120" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-login" value="Login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="200" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-search" value="Search Properties" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="520" y="120" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-view-property" value="View Property&#xa;Details" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-create-booking" value="Create Booking" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-make-payment" value="Make Payment" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="940" y="120" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-cancel-booking" value="Cancel Booking" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="200" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-write-review" value="Write Review" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="700" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-manage-profile" value="Manage Profile" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-wishlist" value="Add to Wishlist" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-message-host" value="Message Host" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="360" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-view-bookings" value="View Booking&#xa;History" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="520" y="360" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Host Use Cases -->
+        <mxCell id="uc-create-listing" value="Create Property&#xa;Listing" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-edit-listing" value="Edit Property" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-manage-availability" value="Manage&#xa;Availability" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-view-host-bookings" value="View Bookings" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-approve-booking" value="Approve/Reject&#xa;Booking" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="700" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-review-guest" value="Review Guest" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="700" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-receive-payout" value="Receive Payout" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="940" y="520" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-message-guest" value="Message Guest" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="640" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Shared/System Use Cases -->
+        <mxCell id="uc-send-notification" value="Send&#xa;Notification" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="940" y="360" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uc-process-refund" value="Process Refund" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="940" y="280" width="140" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Associations Guest to Use Cases -->
+        <mxCell id="link-guest-register" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-register">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="270" as="sourcePoint" />
+            <mxPoint x="270" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-login" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-login">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-search" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-search">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="270" as="sourcePoint" />
+            <mxPoint x="270" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-view" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-view-property">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-booking" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-create-booking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-cancel" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-cancel-booking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-review" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-write-review">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-profile" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-manage-profile">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-wishlist" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-wishlist">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="280" as="sourcePoint" />
+            <mxPoint x="270" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-message" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-message-host">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="300" as="sourcePoint" />
+            <mxPoint x="270" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-guest-history" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-view-bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="300" as="sourcePoint" />
+            <mxPoint x="270" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Associations Host to Use Cases -->
+        <mxCell id="link-host-create" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-create-listing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="540" as="sourcePoint" />
+            <mxPoint x="270" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-host-edit" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-edit-listing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="550" as="sourcePoint" />
+            <mxPoint x="270" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-host-availability" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-manage-availability">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="540" as="sourcePoint" />
+            <mxPoint x="270" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-host-viewbookings" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-view-host-bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="550" as="sourcePoint" />
+            <mxPoint x="270" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-host-approve" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-approve-booking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="540" as="sourcePoint" />
+            <mxPoint x="270" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-host-reviewguest" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-review-guest">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="550" as="sourcePoint" />
+            <mxPoint x="270" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-host-payout" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-receive-payout">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="550" as="sourcePoint" />
+            <mxPoint x="270" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-host-messageguest" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-host" target="uc-message-guest">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="570" as="sourcePoint" />
+            <mxPoint x="270" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Associations Payment Gateway -->
+        <mxCell id="link-payment-make" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-payment" target="uc-make-payment">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="380" as="sourcePoint" />
+            <mxPoint x="1140" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-payment-refund" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-payment" target="uc-process-refund">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="390" as="sourcePoint" />
+            <mxPoint x="1140" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="link-payment-payout" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-payment" target="uc-receive-payout">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="420" as="sourcePoint" />
+            <mxPoint x="1140" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Include Relationships -->
+        <mxCell id="include-booking-payment" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="uc-create-booking" target="uc-make-payment">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="850" y="150" as="sourcePoint" />
+            <mxPoint x="930" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="include-cancel-refund" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="uc-cancel-booking" target="uc-process-refund">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="850" y="240" as="sourcePoint" />
+            <mxPoint x="930" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="include-booking-notification" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="uc-create-booking" target="uc-send-notification">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="770" y="190" as="sourcePoint" />
+            <mxPoint x="1000" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Title -->
+        <mxCell id="title" value="Airbnb Clone Backend - Use Case Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend-box" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="850" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-text" value="Legend: Blue=Guest | Green=Host | Pink=Payment | Purple=System" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="310" y="857" width="280" height="16" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
